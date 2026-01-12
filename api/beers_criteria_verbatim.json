@@ -1,0 +1,666 @@
+{
+  "potentially_inappropriate_medications": [
+    {
+      "drug": "Antihistamines\nFirst-generation antihistamines\nBrompheniramine\nChlorpheniramine\nCyproheptadine\nDimenhydrinate\nDiphenhydramine (oral)\nDoxylamine\nHydroxyzine\nMeclizine\nPromethazine\nTriprolidine",
+      "rationale": "Highly anticholinergic; clearance reduced with advanced age, and tolerance develops when used as hypnotic; risk of confusion, dry mouth, constipation, and other anticholinergic effects or toxicity. Cumulative exposure to anticholinergic drugs is associated with an increased risk of falls, delirium, and dementia, even in younger adults. Consider total anticholinergic burden during regular medication reviews and be cautious in \"young-old\" as well as \"old-old\" adults.\n\nUse of diphenhydramine in situations such as acute treatment of severe allergic reactions may be appropriate.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Anti-infective\nNitrofurantoin",
+      "rationale": "Potential for pulmonary toxicity, hepatoxicity, and peripheral neuropathy, especially with long-term use; safer alternatives available.",
+      "recommendation": "Avoid in individuals with CrCl <30 mL/min or for long-term suppression.",
+      "quality_of_evidence": "Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Cardiovascular and antithrombotics\nAspirin for primary prevention of cardiovascular disease",
+      "rationale": "Risk of major bleeding from aspirin increases markedly in older age. Studies suggest a lack of net benefit and potential for net harm when initiated for primary prevention in older adults. There is less evidence about stopping aspirin among long-term users, although similar principles for initiation may apply.\n\nNote: Aspirin is generally indicated for secondary prevention in older adults with established cardiovascular disease.",
+      "recommendation": "Avoid initiating aspirin for primary prevention of cardiovascular disease.\n\nConsider deprescribing aspirin in older adults already taking it for primary prevention.",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Warfarin for the treatment of nonvalvular atrial fibrillation or venous thromboembolism (VTE)",
+      "rationale": "Compared with DOACs, warfarin has higher risks of major bleeding (particularly intracranial bleeding) and similar or lower effectiveness for the treatment of nonvalvular atrial fibrillation and VTE. DOACs are thus the preferred choice for anticoagulation for most people with these conditions.",
+      "recommendation": "Avoid starting warfarin as initial therapy for the treatment of nonvalvular atrial fibrillation or VTE unless alternative options (i.e., DOACs) are contraindicated or there are substantial barriers to their use.\n\nFor older adults who have been using warfarin long-term, it may be reasonable to continue this medication, particularly among those with well-controlled INRs (i.e., >70% time in the therapeutic range) and no adverse effects.\n\nSee also criteria on rivaroxaban (Table 2) and dabigatran (Table 4) and footnote regarding choice among DOACs.",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Rivaroxaban for long-term treatment of nonvalvular atrial fibrillation or venous thromboembolism (VTE)",
+      "rationale": "At doses used for long-term treatment of VTE or nonvalvular atrial fibrillation, rivaroxaban appears to have a higher risk of major bleeding and GI bleeding in older adults than other DOACs, particularly apixaban.\n\nRivaroxaban may be reasonable in special situations, for example when once-daily dosing is necessary to facilitate medication adherence. All DOACs confer a lower risk of intracranial hemorrhage than warfarin.",
+      "recommendation": "Avoid for long-term treatment of atrial fibrillation or VTE in favor of safer anticoagulant alternatives.\n\nSee also criteria on warfarin (Table 2) and dabigatran (Table 4) and footnote regarding the choice between warfarin and DOACs and among DOACs.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Dipyridamole, oral short-acting (does not apply to extended-release combination with aspirin)",
+      "rationale": "May cause orthostatic hypotension; more effective alternatives available; IV form acceptable for use in cardiac stress testing.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Non-selective peripheral alpha-1 blockers for the treatment of hypertension\nDoxazosin\nPrazosin\nTerazosin",
+      "rationale": "High risk of orthostatic hypotension and associated harms, especially in older adults; not recommended as routine treatment for hypertension; alternative agents have superior risk/benefit profile.",
+      "recommendation": "Avoid use as an antihypertensive.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Central alpha-agonists for the treatment of hypertension\nClonidine\nGuanfacine",
+      "rationale": "High risk of adverse CNS effects; may cause bradycardia and orthostatic hypotension; not recommended as routine treatment for hypertension.",
+      "recommendation": "Avoid clonidine as first-line treatment for hypertension.\n\nAvoid other central alpha-agonists for the treatment of hypertension.",
+      "quality_of_evidence": "Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Nifedipine, immediate release",
+      "rationale": "Potential for hypotension; risk of precipitating myocardial ischemia.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Amiodarone",
+      "rationale": "Effective for maintaining sinus rhythm but has greater toxicities than other antiarrhythmics used in atrial fibrillation; may be reasonable first-line therapy in patients with concomitant heart failure or substantial left ventricular hypertrophy if rhythm control is preferred over rate control.",
+      "recommendation": "Avoid as first-line therapy for atrial fibrillation unless the patient has heart failure or substantial left ventricular hypertrophy.",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Dronedarone",
+      "rationale": "Worse outcomes in people who have permanent atrial fibrillation or severe or recently decompensated heart failure. In some circumstances, worse outcomes have also been reported in people with HFrEF (e.g., left ventricular ejection fraction \u226435%) who have milder symptoms (NYHA class I or II).",
+      "recommendation": "Avoid in individuals with permanent atrial fibrillation or severe or recently decompensated heart failure. Use caution in patients with HFrEF with less severe symptoms (NYHA class I or II).",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Digoxin for first-line treatment of atrial fibrillation or heart failure",
+      "rationale": "Use in atrial fibrillation: should not be used as a first-line agent because there are safer and more effective alternatives for rate control.\n\nUse in heart failure: evidence for benefits and harms of digoxin is conflicting and of lower quality; most (but not all) evidence concerns use in HFrEF. There is strong evidence for other agents as first-line therapy to reduce hospitalizations and mortality in adults with HFrEF. In heart failure, higher dosages are not associated with additional benefits and may increase the risk of toxicity. Use caution in discontinuing digoxin among current users with HFrEF, given limited evidence suggesting worse clinical outcomes after discontinuation.\n\nDecreased renal clearance of digoxin may lead to an increased risk of toxic effects; further dose reduction may be necessary for those with Stage 4 or 5 chronic kidney disease.",
+      "recommendation": "Avoid this rate control agent as first-line therapy for atrial fibrillation.\n\nAvoid as first-line therapy for heart failure. See rationale for caution about withdrawal in long-term users with HFrEF.\n\nIf used for atrial fibrillation or heart failure, avoid dosages >0.125 mg/day.",
+      "quality_of_evidence": "Atrial fibrillation; heart failure: low\nDosage > 0.125 mg/day: moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Central nervous system\nAntidepressants with strong anticholinergic activity, alone or in combination\nAmitriptyline\nAmoxapine\nClomipramine\nDesipramine\nDoxepin >6 mg/day\nImipramine\nNortriptyline\nParoxetine",
+      "rationale": "Highly anticholinergic, sedating, and cause orthostatic hypotension; the safety profile of low-dose doxepin (\u22646 mg/day) is comparable to that of placebo.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Antiparkinsonian agents with strong anticholinergic activity\nBenztropine (oral)\nTrihexyphenidyl",
+      "rationale": "Not recommended for prevention or treatment of extrapyramidal symptoms due to antipsychotics; more effective agents available for the treatment of Parkinson disease.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Antipsychotics, first- (typical) and second- (atypical) generation\nAripiprazole\nHaloperidol\nOlanzapine\nQuetiapine\nRisperidone\nOthers",
+      "rationale": "Increased risk of stroke and greater rate of cognitive decline and mortality in persons with dementia. Additional evidence suggests an association of increased risk between antipsychotic medication and mortality independent of dementia.\n\nAvoid antipsychotics for behavioral problems of dementia or delirium unless documented nonpharmacologic options (e.g., behavioral interventions) have failed and/or the patient is threatening substantial harm to self or others. If used, periodic deprescribing attempts should be considered to assess ongoing need and/or the lowest effective dose.",
+      "recommendation": "Avoid, except in FDA-approved indications such as schizophrenia, bipolar disorder, Parkinson disease psychosis (see Table 3), adjunctive treatment of major depressive disorder, or for short-term use as an antiemetic.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Barbiturates\nButalbital\nPhenobarbital\nPrimidone",
+      "rationale": "High rate of physical dependence, tolerance to sleep benefits, greater risk of overdose at low dosages.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Benzodiazepines\nAlprazolam\nChlordiazepoxide (alone or in combination with amitriptyline or clidinium)\nClobazam\nClonazepam\nClorazepate\nDiazepam\nEstazolam\nLorazepam\nMidazolam\nOxazepam\nTemazepam\nTriazolam",
+      "rationale": "The use of benzodiazepines exposes users to risks of abuse, misuse, and addiction. Concomitant use of opioids may result in profound sedation, respiratory depression, coma, and death.\n\nOlder adults have increased sensitivity to benzodiazepines and decreased metabolism of long-acting agents; the continued use of benzodiazepines may lead to clinically significant physical dependence. In general, all benzodiazepines increase the risk of cognitive impairment, delirium, falls, fractures, and motor vehicle crashes in older adults.\n\nMay be appropriate for seizure disorders, rapid eye movement sleep behavior disorder, benzodiazepine withdrawal, ethanol withdrawal, severe generalized anxiety disorder, and periprocedural anesthesia.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Nonbenzodiazepine benzodiazepine receptor agonist hypnotics (\"Z-drugs\")\nEszopiclone\nZaleplon\nZolpidem",
+      "rationale": "Nonbenzodiazepine benzodiazepine receptor agonist hypnotics (\"Z-drugs\") have adverse events similar to those of benzodiazepines in older adults (e.g., delirium, falls, fractures, increased emergency room visits/hospitalizations, motor vehicle crashes); minimal improvement in sleep latency and duration.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Meprobamate",
+      "rationale": "High rate of physical dependence; very sedating.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Ergoloid mesylates (dehydrogenated ergot alkaloids)",
+      "rationale": "Lack of efficacy.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Endocrine\nAndrogens\nMethyltestosterone\nTestosterone",
+      "rationale": "Potential for cardiac problems; potential risks in men with prostate cancer.",
+      "recommendation": "Avoid unless indicated for confirmed hypogonadism with clinical symptoms.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Weak"
+    },
+    {
+      "drug": "Estrogens with or without progestins (includes natural and synthetic estrogen preparations)",
+      "rationale": "Evidence of carcinogenic potential (breast and endometrium); lack of cardioprotective effect and cognitive protection in older women.\n\nFor women who start HRT at age 60 and older, the risks of HRT are greater than the benefits, as HRT is linked to a higher risk of heart disease, stroke, blood clots, and dementia.\n\nEvidence indicates that vaginal estrogens for the treatment of vaginal dryness are safe and effective; women with a history of breast cancer who do not respond to nonhormonal therapies are advised to discuss the risks and benefits of low-dose vaginal estrogen (e.g., dosages of estradiol <25 mcg twice weekly) with their healthcare provider.",
+      "recommendation": "Do not initiate systemic estrogen (e.g., oral tablets or transdermal patches). Consider deprescribing among older women already using this medication.\n\nVaginal cream or vaginal tablets: acceptable to use low-dose intravaginal estrogen for the management of dyspareunia, recurrent lower urinary tract infections, and other vaginal symptoms.",
+      "quality_of_evidence": "Oral and patch: high\nVaginal cream or vaginal tablets: moderate",
+      "strength": "Oral and patch: strong\nTopical vaginal cream or tablets: weak"
+    },
+    {
+      "drug": "Insulin, sliding scale (insulin regimens containing only short- or rapid-acting insulin dosed according to current blood glucose levels without concurrent use of basal or long-acting insulin)",
+      "rationale": "Higher risk of hypoglycemia without improvement in hyperglycemia management regardless of care setting. Avoid insulin regimens that include only short- or rapid-acting insulin dosed according to current blood glucose levels without concurrent use of basal or long-acting insulin. This recommendation does not apply to regimens that contain basal insulin or long-acting insulin.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Sulfonylureas (all, including short- and longer-acting)\nGliclazide\nGlimepiride\nGlipizide\nGlyburide (Glibenclamide)",
+      "rationale": "Sulfonylureas have a higher risk of cardiovascular events, all-cause mortality, and hypoglycemia than alternative agents. Sulfonylureas may increase the risk of cardiovascular death and ischemic stroke.\n\nAmong sulfonylureas, long-acting agents (e.g., glyburide, glimepiride) confer a higher risk of prolonged hypoglycemia than short-acting agents (e.g., glipizide).",
+      "recommendation": "Avoid sulfonylureas as first- or second-line monotherapy or add-on therapy unless there are substantial barriers to the use of safer and more effective agents.\n\nIf a sulfonylurea is used, choose short-acting agents (e.g., glipizide) over long-acting agents (e.g., glyburide, glimepiride).",
+      "quality_of_evidence": "Hypoglycemia: High\nCV events and all-cause mortality: Moderate\nCV death and ischemic stroke: Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Desiccated thyroid",
+      "rationale": "Concerns about cardiac effects; safer alternatives available.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Megestrol",
+      "rationale": "Minimal effect on weight; increases the risk of thrombotic events and possibly death in older adults.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Growth hormone",
+      "rationale": "Impact on body composition is small and associated with edema, arthralgia, carpal tunnel syndrome, gynecomastia, and impaired fasting glucose.",
+      "recommendation": "Avoid, except for patients rigorously diagnosed by evidence-based criteria with growth hormone deficiency due to an established etiology.",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Gastrointestinal\nProton-pump inhibitors\nDexlansoprazole\nEsomeprazole\nLansoprazole\nOmeprazole\nPantoprazole\nRabeprazole",
+      "rationale": "Risk of C. difficile infection, pneumonia, GI malignancies, bone loss, and fractures.",
+      "recommendation": "Avoid scheduled use for >8 weeks unless for high-risk patients (e.g., oral corticosteroids or chronic NSAID use), erosive esophagitis, Barrett's esophagitis, pathologic hypersecretory condition, or demonstrated need for maintenance treatment (e.g., because of failure of drug discontinuation trial or H2-receptor antagonists).",
+      "quality_of_evidence": "C. difficile, bone loss, and fractures: High\nPneumonia and GI malignancies: Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Metoclopramide",
+      "rationale": "Can cause extrapyramidal effects, including tardive dyskinesia; the risk may be greater in frail older adults and with prolonged exposure.",
+      "recommendation": "Avoid, unless for gastroparesis with a duration of use not to exceed 12 weeks except in rare cases.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "GI antispasmodics with strong anticholinergic activity\nAtropine (excludes ophthalmic)\nClidinium-chlordiazepoxide\nDicyclomine\nHyoscyamine\nScopolamine",
+      "rationale": "Highly anticholinergic, uncertain effectiveness.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Mineral oil, given orally",
+      "rationale": "Potential for aspiration and adverse effects; safer alternatives available.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Genitourinary\nDesmopressin",
+      "rationale": "High risk of hyponatremia; safer alternative treatments for nocturia (including nonpharmacologic).",
+      "recommendation": "Avoid for treatment of nocturia or nocturnal polyuria.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Pain medications\nNon-COX-2-selective NSAIDs, oral:\nAspirin >325 mg/day\nDiclofenac\nDiflunisal\nEtodolac\nFlurbiprofen\nIbuprofen\nIndomethacin\nKetorolac\nMeloxicam\nNabumetone\nNaproxen\nOxaprozin\nPiroxicam\nSulindac",
+      "rationale": "Increased risk of GI bleeding or peptic ulcer disease in high-risk groups, including those >75 years old or taking oral or parenteral corticosteroids, anticoagulants, or antiplatelet agents; use of proton-pump inhibitor or misoprostol reduces but does not eliminate risk. Upper GI ulcers, gross bleeding, or perforation caused by NSAIDs occur in ~1% of patients treated for 3\u20136 months and in ~2%\u20134% of patients treated for 1 year; these trends continue with longer duration of use. Also can increase blood pressure and induce kidney injury. Risks are dose-related.",
+      "recommendation": "Avoid chronic use unless other alternatives are not effective and the patient can take a gastroprotective agent (proton-pump inhibitor or misoprostol).\n\nAvoid short-term scheduled use in combination with oral or parenteral corticosteroids, anticoagulants, or antiplatelet agents unless other alternatives are not effective and the patient can take a gastroprotective agent (proton-pump inhibitor or misoprostol).",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Indomethacin\nKetorolac (oral and parenteral)",
+      "rationale": "Increased risk of GI bleeding/peptic ulcer disease and acute kidney injury in older adults. Of all the NSAIDs, indomethacin has the most adverse effects, including a higher risk of adverse CNS effects.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Meperidine",
+      "rationale": "Oral analgesic not effective in dosages commonly used; may have a higher risk of neurotoxicity, including delirium, than other opioids; safer alternatives available.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Skeletal muscle relaxants\nCarisoprodol\nChlorzoxazone\nCyclobenzaprine\nMetaxalone\nMethocarbamol\nOrphenadrine",
+      "rationale": "Muscle relaxants typically used to treat musculoskeletal complaints are poorly tolerated by older adults due to anticholinergic adverse effects, sedation, and increased risk of fractures; effectiveness at dosages tolerated by older adults is questionable.\n\nThis criterion does not apply to skeletal muscle relaxants typically used for the management of spasticity (i.e., baclofen and tizanidine) although these drugs can also cause substantial adverse effects.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    }
+  ],
+  "drug_disease_interactions": [
+    {
+      "disease": "Cardiovascular\nHeart failure",
+      "drug": "Cilostazol\nDextromethorphan-quinidine\n\nNondihydropyridine calcium channel blockers (CCBs)\nDiltiazem\nVerapamil\n\nDronedarone\nNSAIDs and COX-2 inhibitors\nThiazolidinediones\nPioglitazone",
+      "rationale": "Potential to promote fluid retention and/or exacerbate heart failure (NSAIDs and COX-2 inhibitors, non-dihydropyridine CCBs, thiazolidinediones); potential to increase mortality in older adults with heart failure (cilostazol and dronedarone); concerns about QT prolongation (dextromethorphan-quinidine).\n\nNote: This is not a comprehensive list of medications to avoid in patients with heart failure.",
+      "recommendation": "Avoid:\nCilostazol\nDextromethorphan-quinidine\n-------------------------------\nAvoid in heart failure with reduced ejection fraction:\nNondihydropyridine calcium channel blockers (CCBs)\nDiltiazem\nVerapamil\n-------------------------------\nUse with caution in patients with heart failure who are asymptomatic; avoid in patients with symptomatic heart failure:\nDronedarone\nNSAIDs and COX-2 inhibitors\nThiazolidinediones\nPioglitazone",
+      "quality_of_evidence": "Cilostazol, dextromethorphan-quinidine, COX-2 inhibitors: Low\nNon-dihydropyridine CCBs, NSAIDs: Moderate\nDronedarone, thiazolidenediones: High",
+      "strength": "Strong"
+    },
+    {
+      "disease": "Syncope",
+      "drug": "Antipsychotics (selected)\nChlorpromazine\nOlanzapine\n\nCholinesterase inhibitors (AChEIs)\nDonepezil\nGalantamine\nRivastigmine\n\nNon-selective peripheral alpha-1 blockers\nDoxazosin\nPrazosin\nTerazosin\n\nTertiary tricyclic antidepressants (TCAs)\nAmitriptyline\nClomipramine\nDoxepin\nImipramine",
+      "rationale": "Antipsychotics listed and tertiary TCAs increase the risk of orthostatic hypotension.\n\nAChEIs cause bradycardia and should be avoided in older adults whose syncope may be due to bradycardia.\n\nNon-selective peripheral alpha-1 blockers cause orthostatic blood pressure changes and should be avoided in older adults whose syncope may be due to orthostatic hypotension.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "High",
+      "strength": "Antipsychotics, non-selective peripheral alpha-1 blockers: Weak\nAChEIs, tertiary TCAs: Strong"
+    },
+    {
+      "disease": "Central nervous system\nDelirium",
+      "drug": "Anticholinergics (see Table 7)\nAntipsychotics\nBenzodiazepines\nCorticosteroids (oral and parenteral)\n\nH2-receptor antagonists\nCimetidine\nFamotidine\nNizatidine\n\nNonbenzodiazepine benzodiazepine receptor agonist hypnotics (\"Z-drugs\")\nEszopiclone\nZaleplon\nZolpidem\n\nOpioids",
+      "rationale": "Avoid in older adults with or at high risk of delirium because of the potential of inducing or worsening delirium.\n\nAntipsychotics: avoid for behavioral problems of dementia or delirium unless nonpharmacologic options (eg, behavioral interventions) have failed or are not possible and the older adult is threatening substantial harm to self or others. If used, periodic deprescribing attempts should be considered to assess ongoing need and/or the lowest effective dose.\n\nCorticosteroids: if needed, use the lowest possible dose for the shortest duration and monitor for delirium.\n\nOpioids: emerging data highlights an association between opioid administration and delirium. For older adults with pain, use a balanced approach, including the use of validated pain assessment tools and multimodal strategies that include nondrug approaches to minimize opioid use.",
+      "recommendation": "Avoid, except in situations listed under the rationale statement.",
+      "quality_of_evidence": "H2-receptor antagonists: Low\nAll others: Moderate",
+      "strength": "Strong"
+    },
+    {
+      "disease": "Dementia or cognitive impairment",
+      "drug": "Anticholinergics (see Table 7)\nAntipsychotics, chronic use or persistent as-needed use\nBenzodiazepines\n\nNonbenzodiazepine benzodiazepine receptor agonist hypnotics (\"Z-drugs\")\nEszopiclone\nZaleplon\nZolpidem",
+      "rationale": "Avoid because of adverse CNS effects. See criteria on individual drugs for additional information.\n\nAntipsychotics: increased risk of stroke and greater rate of cognitive decline and mortality in people with dementia. Avoid antipsychotics for behavioral problems of dementia or delirium unless documented nonpharmacologic options (e.g., behavioral interventions) have failed and/or the patient is threatening substantial harm to self or others. If used, periodic deprescribing attempts should be considered to assess ongoing need and/or the lowest effective dose.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "disease": "History of falls or fractures",
+      "drug": "Anticholinergics (see Table 7)\n\nAntidepressants (selected classes)\nSNRIs\nSSRIs\nTricyclic antidepressants (TCAs)\n\nAntiepileptics\nAntipsychotics\nBenzodiazepines\n\nNonbenzodiazepine benzodiazepine receptor agonist hypnotics (\"Z-drugs\")\nEszopiclone\nZaleplon\nZolpidem\n\nOpioids",
+      "rationale": "May cause ataxia, impaired psychomotor function, syncope, or additional falls.\n\nAntidepressants (selected classes): evidence for risk of falls and fractures is mixed; newer evidence suggests that SNRIs may increase falls risk.\n\nBenzodiazepines: shorter-acting ones are not safer than long-acting ones.\n\nIf one of the drugs must be used, consider reducing the use of other CNS-active medications that increase the risk of falls and fractures (i.e., anticholinergics, selected antidepressants, antiepileptics, antipsychotics, sedative/hypnotics including benzodiazepines and, nonbenzodiazepine benzodiazepine receptor agonist hypnotics, opioids) and implement other strategies to reduce fall risk.",
+      "recommendation": "Avoid unless safer alternatives are not available.\n\nAntiepileptics: avoid except for seizures and mood disorders.\n\nOpioids: avoid except for pain management in the setting of severe acute pain.",
+      "quality_of_evidence": "Antidepressants, opioids: Moderate\nAll others: High",
+      "strength": "Strong"
+    },
+    {
+      "disease": "Parkinson disease",
+      "drug": "Antiemetics\nMetoclopramide\nProchlorperazine\nPromethazine\n\nAntipsychotics (except clozapine, pimavanserin, and quetiapine)",
+      "rationale": "Dopamine-receptor antagonists with the potential to worsen parkinsonian symptoms\n\nExceptions: clozapine, pimavanserin, and quetiapine appear to be less likely to precipitate the worsening of Parkinson disease than other antipsychotics.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "disease": "Gastrointestinal\nHistory of gastric or duodenal ulcers",
+      "drug": "Aspirin\nNon-COX-2 selective NSAIDs",
+      "rationale": "May exacerbate existing ulcers or cause new/additional ulcers",
+      "recommendation": "Avoid unless other alternatives are not effective and the patient can take a gastroprotective agent (i.e., proton-pump inhibitor or misoprostol).",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "disease": "Kidney/urinary tract\nUrinary incontinence (all types) in women",
+      "drug": "Non-selective peripheral alpha-1 blockers\nDoxazosin\nPrazosin\nTerazosin\n\nEstrogen, oral and transdermal (excludes intravaginal estrogen)",
+      "rationale": "Aggravation of incontinence (alpha-1 blockers), lack of efficacy (oral estrogen)",
+      "recommendation": "Avoid in women\nSee also recommendation on estrogen (Table 2)",
+      "quality_of_evidence": "Non-selective peripheral alpha-1 blockers: Moderate\nEstrogen: High",
+      "strength": "Non-selective peripheral alpha-1 blockers: Strong\nEstrogen: Strong"
+    },
+    {
+      "disease": "Lower urinary tract symptoms, benign prostatic hyperplasia",
+      "drug": "Strongly anticholinergic drugs, except antimuscarinics for urinary incontinence (see Table 7)",
+      "rationale": "May decrease urinary flow and cause urinary retention",
+      "recommendation": "Avoid in men",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    }
+  ],
+  "use_with_caution": [
+    {
+      "drug": "Dabigatran for long-term treatment of nonvalvular atrial fibrillation or venous thromboembolism (VTE)",
+      "rationale": "Increased risk of GI bleeding compared with warfarin (based on head-to-head clinical trials) and of GI bleeding and major bleeding compared with apixaban (based on observational studies and meta-analyses) in older adults when used for long-term treatment of nonvalvular atrial fibrillation or VTE.",
+      "recommendation": "Use caution in selecting dabigatran over other DOACs (e.g., apixaban) for long-term treatment of nonvalvular atrial fibrillation or VTE.\n\nSee also criteria on warfarin and rivaroxaban (Table 2) and footnote regarding choice among DOACs.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Prasugrel\nTicagrelor",
+      "rationale": "Both increase the risk of major bleeding in older adults compared with clopidogrel, especially among those 75 years old and older. However, this risk may be offset by cardiovascular benefits in select patients.",
+      "recommendation": "Use with caution, particularly in adults 75 years old and older.\n\nIf prasugrel is used, consider a lower dose (5 mg) for those 75 years old and older.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Antidepressants (selected)\nMirtazipine\nSNRIs\nSSRIs\nTCAs\n\nAntiepileptics (selected)\nCarbamazepine\nOxcarbazepine\n\nAntipsychotics\nDiuretics\nTramadol",
+      "rationale": "May exacerbate or cause SIADH or hyponatremia; monitor sodium levels closely when starting or changing dosages in older adults.",
+      "recommendation": "Use with caution",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Dextromethorphan-quinidine",
+      "rationale": "Limited efficacy in patients with behavioral symptoms of dementia (does not apply to the treatment of pseudobulbar affect). May increase the risk of falls and concerns with clinically significant drug interactions and with use in those with heart failure (see Table 3).",
+      "recommendation": "Use with caution",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Trimethoprim-sulfamethoxazole",
+      "rationale": "Increased risk of hyperkalemia when used concurrently with an ACEI, ARB, or ARNI in presence of decreased CrCl.",
+      "recommendation": "Use with caution in patients on ACEI, ARB, or ARNI and decreased CrCl.",
+      "quality_of_evidence": "Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Sodium-glucose co-transporter-2 (SGLT2) inhibitors\nCanigliflozin\nDapagliflozin\nEmplaglifozin\nErtuglifozin",
+      "rationale": "Older adults may be at increased risk of urogenital infections, particularly women in the first month of treatment. An increased risk of euglycemic diabetic ketoacidosis has also been seen in older adults.",
+      "recommendation": "Use with caution.\nMonitor patients for urogenital infections and ketoacidosis.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Weak"
+    }
+  ],
+  "drug_interactions": [
+    {
+      "object_drug": "RAS inhibitors (ACEIs, ARBs, ARNIs, aliskiren) or potassium-sparing diuretics (amiloride, triamterene)",
+      "interacting_drug": "Another RAS inhibitor or a potassium-sparing diuretic",
+      "rationale": "Increased risk of hyperkalemia.",
+      "recommendation": "Avoid routinely using 2 or more RAS inhibitors, or a RAS inhibitor and potassium-sparing diuretic, concurrently in those with chronic kidney disease Stage 3a or higher.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Opioids",
+      "interacting_drug": "Benzodiazepines",
+      "rationale": "Increased risk of overdose and adverse events.",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Opioids",
+      "interacting_drug": "Gabapentin\nPregabalin",
+      "rationale": "Increased risk of severe sedation-related adverse events, including respiratory depression and death.",
+      "recommendation": "Avoid; exceptions are when transitioning from opioid therapy to gabapentin or pregabalin, or when using gabapentinoids to reduce opioid dose, although caution should be used in all circumstances.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Anticholinergic",
+      "interacting_drug": "Anticholinergic",
+      "rationale": "Use of more than one medication with anticholinergic properties increases the risk of cognitive decline, delirium, and falls or fractures.",
+      "recommendation": "Avoid; minimize the number of anticholinergic drugs (Table 7).",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Antiepileptics (including gabapentinoids)\nAntidepressants (TCAs, SSRIs, and SNRIs)\nAntipsychotics\nBenzodiazepines\nNonbenzodiazepine benzodiazepine receptor agonist hypnotics (i.e., \"Z-drugs\")\nOpioids\nSkeletal muscle relaxants",
+      "interacting_drug": "Any combination of \u22653 of these CNS-active drugs",
+      "rationale": "Increased risk of falls and of fracture with the concurrent use of \u22653 CNS-active agents (antiepileptics including gabapentinoids, antidepressants, antipsychotics, benzodiazepines, nonbenzodiazepine benzodiazepine receptor agonist hypnotics, opioids, and skeletal muscle relaxants).",
+      "recommendation": "Avoid concurrent use of \u22653 CNS-active drugs (among types as listed at left); minimize the number of CNS-active drugs.",
+      "quality_of_evidence": "High",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Lithium",
+      "interacting_drug": "ACEIs\nARBs\nARNIs",
+      "rationale": "Increased risk of lithium toxicity.",
+      "recommendation": "Avoid; monitor lithium concentrations.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Lithium",
+      "interacting_drug": "Loop diuretics",
+      "rationale": "Increased risk of lithium toxicity.",
+      "recommendation": "Avoid; monitor lithium concentrations.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Non-selective peripheral alpha-1 blockers",
+      "interacting_drug": "Loop diuretics",
+      "rationale": "Increased risk of urinary incontinence in older women.",
+      "recommendation": "Avoid in older women, unless conditions warrant both drugs.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Phenytoin",
+      "interacting_drug": "Trimethoprim-sulfamethoxazole",
+      "rationale": "Increased risk of phenytoin toxicity",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Theophylline",
+      "interacting_drug": "Cimetidine",
+      "rationale": "Increased risk of theophylline toxicity",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Theophylline",
+      "interacting_drug": "Ciprofloxacin",
+      "rationale": "Increased risk of theophylline toxicity",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "object_drug": "Warfarin",
+      "interacting_drug": "Amiodarone\nCiprofloxacin\nMacrolides (excluding azithromycin)\nTrimethoprim-sulfamethoxazole\nSSRIs",
+      "rationale": "Increased risk of bleeding.",
+      "recommendation": "Avoid when possible; if used together, monitor INR closely.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    }
+  ],
+  "renal_adjustment": [
+    {
+      "drug": "Anti-infective\nCiprofloxacin",
+      "crcl_threshold": "<30",
+      "rationale": "Increased risk of CNS effects (e.g., seizures, confusion) and tendon rupture.",
+      "recommendation": "Dosages used to treat common infections typically require reduction when CrCl <30 mL/min.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Nitrofurantoin",
+      "crcl_threshold": "<30",
+      "rationale": "Potential for pulmonary toxicity, hepatoxicity, and peripheral neuropathy, especially with long-term use. (See also Table 2).",
+      "recommendation": "Avoid if CrCl <30 mL/min",
+      "quality_of_evidence": "Low",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Trimethoprim-sulfamethoxazole",
+      "crcl_threshold": "<30",
+      "rationale": "Increased risk of worsening of kidney function and hyperkalemia; risk of hyperkalemia especially prominent with concurrent use of an ACE, ARB, or ARNI.",
+      "recommendation": "Reduce dosage if CrCl is 15\u201329 mL/min.\nAvoid if CrCl <15 mL/min.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Cardiovascular and antithrombotics\nAmiloride",
+      "crcl_threshold": "<30",
+      "rationale": "Hyperkalemia and hyponatremia",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Dabigatran",
+      "crcl_threshold": "<30",
+      "rationale": "Lack of evidence for efficacy and safety in individuals with a CrCl <30 mL/min. Label dose for patients with CrCl 15\u201330 mL/min based on pharmacokinetic data.",
+      "recommendation": "Avoid when CrCl <30 mL/min; dose adjustment is advised when CrCl >30 mL/min in the presence of drug\u2013drug interactions.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Dofetilide",
+      "crcl_threshold": "<60",
+      "rationale": "QTc prolongation and torsades de pointes.",
+      "recommendation": "Reduce dose if CrCl is 20\u201359 mL/min.\nAvoid if CrCl <20 mL/min.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Edoxaban",
+      "crcl_threshold": "15\u201350\n<15 or > 95",
+      "rationale": "Lack of evidence of efficacy or safety in patients with CrCl <30 mL/min.",
+      "recommendation": "Reduce dose if CrCl is 15\u201350 mL/min.\nAvoid if CrCl <15 or > 95 mL/min.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Enoxaparin",
+      "crcl_threshold": "<30",
+      "rationale": "Increased risk of bleeding",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Fondaparinux",
+      "crcl_threshold": "<30",
+      "rationale": "Increased risk of bleeding",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Rivaroxaban",
+      "crcl_threshold": "<50",
+      "rationale": "Lack of efficacy or safety evidence in people with CrCl <15 mL/min; limited evidence for CrCl 15\u201330 mL/min.",
+      "recommendation": "Avoid if CrCl <15 mL/min.\nReduce the dose if CrCl is 15\u201350 mL/min following manufacturer dosing recommendations based on indication-specific dosing.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Spironolactone",
+      "crcl_threshold": "<30",
+      "rationale": "Hyperkalemia",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Triamterene",
+      "crcl_threshold": "<30",
+      "rationale": "Hyperkalemia and hyponatremia",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Central nervous system and analgesics\nBaclofen",
+      "crcl_threshold": "eGFR <60",
+      "rationale": "Increased risk of encephalopathy requiring hospitalization in older adults with eGFR <60 mL/min or who require chronic dialysis.",
+      "recommendation": "Avoid baclofen in older adults with impaired kidney function (eGFR <60 mL/min). When baclofen cannot be avoided, use the lowest effective dose and monitor for signs of CNS toxicity, including altered mental status.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Duloxetine",
+      "crcl_threshold": "<30",
+      "rationale": "Increased GI adverse effects (nausea, diarrhea)",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Weak"
+    },
+    {
+      "drug": "Gabapentin",
+      "crcl_threshold": "<60",
+      "rationale": "CNS adverse effects",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Levetiracetam",
+      "crcl_threshold": "\u226480",
+      "rationale": "CNS adverse effects",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "NSAIDs (non-selective, COX-2 selective, and nonacetylated salicylates, oral and parenteral)",
+      "crcl_threshold": "< 30",
+      "rationale": "May increase the risk of acute kidney injury and a further decline in kidney function",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Pregabalin",
+      "crcl_threshold": "<60",
+      "rationale": "CNS adverse effects",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Tramadol",
+      "crcl_threshold": "<30",
+      "rationale": "CNS adverse effects",
+      "recommendation": "Immediate release: reduce dose\nExtended-release: avoid",
+      "quality_of_evidence": "Low",
+      "strength": "Weak"
+    },
+    {
+      "drug": "Gastrointestinal\nCimetidine",
+      "crcl_threshold": "<50",
+      "rationale": "Mental status changes",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Famotidine",
+      "crcl_threshold": "<50",
+      "rationale": "Mental status changes",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Nizatidine",
+      "crcl_threshold": "<50",
+      "rationale": "Mental status changes",
+      "recommendation": "Reduce dose",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Hyperuricemia\nColchicine",
+      "crcl_threshold": "<30",
+      "rationale": "GI, neuromuscular, and bone marrow toxicity",
+      "recommendation": "Reduce dose; monitor for adverse effects.",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    },
+    {
+      "drug": "Probenecid",
+      "crcl_threshold": "<30",
+      "rationale": "Loss of effectiveness",
+      "recommendation": "Avoid",
+      "quality_of_evidence": "Moderate",
+      "strength": "Strong"
+    }
+  ]
+}
