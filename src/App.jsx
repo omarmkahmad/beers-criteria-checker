@@ -18,7 +18,6 @@ export default function BeersCriteriaChecker() {
     setResults(null);
 
     try {
-      // Call our serverless function instead of Claude API directly
       const response = await fetch("/api/analyze", {
         method: "POST",
         headers: {
@@ -35,7 +34,6 @@ export default function BeersCriteriaChecker() {
       const data = await response.json();
       let responseText = data.content[0].text;
       
-      // Strip markdown code blocks if present
       responseText = responseText.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
       
       const parsedResults = JSON.parse(responseText);
@@ -48,8 +46,26 @@ export default function BeersCriteriaChecker() {
     }
   };
 
+  // Group violations by drug name
+  const groupViolationsByDrug = (violations) => {
+    if (!violations) return {};
+    
+    const grouped = {};
+    violations.forEach(violation => {
+      const drugName = violation.drug;
+      if (!grouped[drugName]) {
+        grouped[drugName] = [];
+      }
+      grouped[drugName].push(violation);
+    });
+    
+    return grouped;
+  };
+
+  const groupedViolations = results?.violations ? groupViolationsByDrug(results.violations) : {};
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-lg shadow-xl p-8">
           {/* Header */}
@@ -68,8 +84,8 @@ export default function BeersCriteriaChecker() {
               Medication List
             </label>
             <textarea
-              className="w-full h-40 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
-              placeholder="Enter medications (e.g., 'diphenhydramine 25mg daily, diazepam 5mg BID, lisinopril 10mg daily')"
+              className="w-full h-40 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+              placeholder="Losartan 50mg&#10;Hydrochlorothiazide 25mg&#10;Sertraline 50mg&#10;Ciprofloxacin 500mg&#10;Tramadol 50mg&#10;Gabapentin 300mg"
               value={medList}
               onChange={(e) => setMedList(e.target.value)}
             />
@@ -82,7 +98,7 @@ export default function BeersCriteriaChecker() {
           <button
             onClick={analyzeMedications}
             disabled={loading}
-            className="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+            className="w-full bg-blue-700 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-800 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
           >
             {loading ? (
               <>
@@ -107,50 +123,73 @@ export default function BeersCriteriaChecker() {
           {/* Results Display */}
           {results && (
             <div className="mt-8 space-y-6">
-              {/* Summary */}
+              {/* Summary with Medications Parsed */}
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <h3 className="font-semibold text-blue-900 mb-2">Summary</h3>
-                <p className="text-blue-800">{results.summary}</p>
+                <p className="text-blue-800 mb-4">{results.summary}</p>
+                
+                {/* Medications Parsed - Now in Summary Box */}
+                {results.medications_parsed && results.medications_parsed.length > 0 && (
+                  <div className="mt-4 pt-4 border-t border-blue-200">
+                    <h4 className="font-semibold text-blue-900 mb-2">Medications Parsed</h4>
+                    <div className="space-y-1">
+                      {results.medications_parsed.map((med, idx) => (
+                        <div key={idx} className="text-sm text-blue-800">
+                          <span className="font-medium">{med.drug}</span>
+                          {med.dose && <span> - {med.dose}</span>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
-              {/* Violations */}
-              {results.violations && results.violations.length > 0 ? (
+              {/* Violations - Grouped by Drug */}
+              {Object.keys(groupedViolations).length > 0 ? (
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
                     <AlertCircle className="text-red-600" />
                     Beers Criteria Violations ({results.violations.length})
                   </h3>
                   <div className="space-y-4">
-                    {results.violations.map((violation, idx) => (
-                      <div key={idx} className="border border-red-200 rounded-lg p-4 bg-red-50">
+                    {Object.entries(groupedViolations).map(([drugName, violations]) => (
+                      <div key={drugName} className="border border-red-200 rounded-lg p-4 bg-red-50">
                         <div className="flex items-start justify-between mb-3">
-                          <h4 className="text-lg font-semibold text-red-900">{violation.drug}</h4>
-                          <span className="px-3 py-1 bg-red-200 text-red-900 rounded-full text-sm font-medium">
-                            {violation.strength}
-                          </span>
+                          <h4 className="text-lg font-semibold text-red-900">{drugName}</h4>
                         </div>
                         
-                        <div className="space-y-2 text-sm">
-                          <div>
-                            <span className="font-medium text-gray-700">Category: </span>
-                            <span className="text-gray-900">{violation.beers_category}</span>
-                          </div>
-                          
-                          <div>
-                            <span className="font-medium text-gray-700">Recommendation: </span>
-                            <span className="text-gray-900">{violation.recommendation}</span>
-                          </div>
-                          
-                          <div>
-                            <span className="font-medium text-gray-700">Rationale: </span>
-                            <span className="text-gray-900">{violation.rationale}</span>
-                          </div>
-                          
-                          <div className="flex gap-4 mt-2">
-                            <span className="text-xs text-gray-600">
-                              Quality of Evidence: {violation.quality_of_evidence}
-                            </span>
-                          </div>
+                        {/* Multiple recommendations for same drug */}
+                        <div className="space-y-4">
+                          {violations.map((violation, idx) => (
+                            <div key={idx} className={idx > 0 ? "pt-4 border-t border-red-200" : ""}>
+                              <div className="flex items-center justify-between mb-2">
+                                <span className="text-sm font-medium text-gray-700">Category: {violation.beers_category}</span>
+                                <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                                  violation.strength === 'Strong' 
+                                    ? 'bg-red-200 text-red-900' 
+                                    : 'bg-orange-200 text-orange-900'
+                                }`}>
+                                  {violation.strength}
+                                </span>
+                              </div>
+                              
+                              <div className="space-y-2 text-sm">
+                                <div>
+                                  <span className="font-medium text-gray-700">Recommendation: </span>
+                                  <span className="text-gray-900">{violation.recommendation}</span>
+                                </div>
+                                
+                                <div>
+                                  <span className="font-medium text-gray-700">Rationale: </span>
+                                  <span className="text-gray-900">{violation.rationale}</span>
+                                </div>
+                                
+                                <div className="text-xs text-gray-600 mt-2">
+                                  Quality of Evidence: {violation.quality_of_evidence}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     ))}
@@ -180,26 +219,6 @@ export default function BeersCriteriaChecker() {
                         {med}
                       </span>
                     ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Parsed Medications */}
-              {results.medications_parsed && results.medications_parsed.length > 0 && (
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    Medications Parsed
-                  </h3>
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <ul className="space-y-2">
-                      {results.medications_parsed.map((med, idx) => (
-                        <li key={idx} className="text-sm text-gray-700">
-                          <span className="font-medium">{med.drug}</span>
-                          {med.dose && <span className="text-gray-600"> - {med.dose}</span>}
-                          {med.frequency && <span className="text-gray-600"> {med.frequency}</span>}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
               )}
