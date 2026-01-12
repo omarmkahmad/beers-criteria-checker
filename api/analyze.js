@@ -85,7 +85,7 @@ JSON OUTPUT FORMAT:
     }
   ],
   "safe_medications": ["list"],
-  "summary": "X of Y medications violate 2023 Beers Criteria"
+  "summary": "X of Y medications parsed are mentioned in the 2023 Beers Criteria."
 }`
           }
         ]
